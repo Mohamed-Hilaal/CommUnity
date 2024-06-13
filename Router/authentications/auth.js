@@ -1,8 +1,7 @@
-const express = require('express');
-const router = express.Router();
+const express = require('express')
+const router = express.Router()
+const UserController = require('../../Controllers/UserController')
 
-router.get('/', (req, res) => {
-    res.send("Happy Halloween");
-});
+// router.get('/', UserController.createUser)
 
-module.exports = router;
+module.exports = router

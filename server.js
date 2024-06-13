@@ -1,10 +1,10 @@
 const app = require('./app')
-// const 
+const DatabaseConnector = require('./DatabaseConnector')
 
 async function start(){
     try{
-    //   const database = new DatabaseConnector()
-    //   await database.connect()
+      const database = new DatabaseConnector()
+      await database.connect()
   
       const PORT = 3000
       app.listen(PORT, (req, res) =>{
@@ -17,4 +17,4 @@ async function start(){
   }
   
   
-  start()
+start()
